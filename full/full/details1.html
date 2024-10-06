@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="title-section">
+                <img src="vidwan-logo.jpg" alt="Logo" class="logo">
+                <div class="title-text">
+                    <h1>VIDWAN</h1>
+                    <p>Expert Database & National Researcher's Network</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li class="home"><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="#">About Vidwan</a>
+                            <a href="#">Who can Join?</a>
+                            <a href="#">Why Vidwan?</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Download</a>
+                        <div class="dropdown-content">
+                            <a href="#">Poster</a>
+                            <a href="#">Proforma</a>
+                            <a href="#">Data Collect Format</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Login</a>
+                        <div class="dropdown-content">
+                            <a href="#">Login as Expert</a>
+                            <a href="#">Login as Nodal Officer</a>
+                            <a href="#">Login as Funding Agencies</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Registration</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#"><img src="search_icon.webp" alt="Search" class="search-icon"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="profile-container">
+            <div class="profile-sidebar">
+                <img src="blank-profile.webp" alt="Profile Picture" class="profile-pic">
+          
+                <div class="academic-info">
+                    <h3>Academic</h3>
+                    <div class="academic-item">
+                        <img src="ORCID_iD.svg.png" alt="ORCID">
+                       
+                        <div class="text-info" id="orcidLink">
+                            
+                         </div>
+                    </div>
+                     <hr>
+                <div class="academic-item">
+                    <img src="scopus.png" alt="Scopus">
+                    <div class="text-info"  id="scopusLink">
+                       
+                        
+                    </div>
+                </div>
+                <hr>
+                <div class="academic-item">
+                    <img src="researcher.jpg" alt="Researcher ID">
+                    <div class="text-info" id="wosLink">
+                    
+                        
+                    </div>  
+                </div>
+                <hr>
+                <div class="academic-item">
+                    <img src="Google-schoalar.jpg" alt="Researcher ID">
+                    <div class="text-info" id="googleScholarLink">
+                       
+                      
+                    </div>  
+                </div>
+            </div>
+                
+            </div>
+            <div class="profile-main">
+                <div class="profile-header">
+                  
+                    <div class="profile-details">
+                        <!-- <h2>Dr Shiva Shankar Reddy</h2> -->
+                        <div id="facultyName"></div>
+                        <p>Assistant Professor<br><br>S.R.K.R Engineering College</p>
+                    </div>
+                    <button class="publications-button">Publications 2011-2024</button>
+                </div>
+               
+                <div class="publications">
+                    <img src="book.png" alt="Publications Icon">
+                    <h3>Publications</h3>
+                    
+                </div>
+               <hr>
+               <div class="citations">
+                <h3>Citations / H-Index</h3>
+                <div class="citation-images">
+                    <img src="citations.jpg" alt="Image 1">
+                    <img src="h.png" alt="Image 2">
+                    <img src="crossref.jpg" alt="Image 3">
+                </div>
+            </div>
+<hr>
+                <div class="google-scholar">
+                    <h3>Google Scholar</h3>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Citations </th>
+                                <th class="left_mar">H-Index </th>
+                                <th class="left_mar">i10-Index </th>
+                            </tr>
+                           
+                        </thead>
+                        <tbody>
+                            <tr>
+                                 <td> <div id="citations"></div> </td>
+                                 <td class="left_mar"><div id="hindex"></div> </td>
+                                 <td class="left_mar"> <div id="i10Index"></div> </td>
+                            </tr>
+                           
+                            
+                        </tbody>
+                    </table>
+                
+                </div>
+                <hr>
+                <button class="edit-profile-button">Edit Profile</button>
+            </div>
+            <div class="similar-experts-list">
+                <h3><img src="bulb.png"  class="bulb-icon"> Similar Experts</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="blank-profile.webp" alt="Expert 1" class="expert-img">
+                            Partha Pratim Chakrabarti
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="blank-profile.webp" alt="Expert 2" class="expert-img">
+                            Sujoy Ghosh
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="blank-profile.webp" alt="Expert 3" class="expert-img">
+                            Anupam Basu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="blank-profile.webp" alt="Expert 4" class="expert-img">
+                            Malati Hegde
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="blank-profile.webp" alt="Expert 5" class="expert-img">
+                            Anandi Giridharan
+                        </a>
+                    </li>
+                    <div id="more-experts" style="display: none;">
+                        <li>
+                            <a href="#">
+                                <img src="blank-profile.webp" alt="Expert 6" class="expert-img">
+                                Chinta Someswara Rao
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="blank-profile.webp" alt="Expert 7" class="expert-img">
+                                K Brahma Raju
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="blank-profile.webp" alt="Expert 8" class="expert-img">
+                                Chalapathiraju Kanumuri
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="blank-profile.webp" alt="Expert 9" class="expert-img">
+                                Prathima Gamini
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <a href="#" id="view-more">View More</a>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById('view-more').addEventListener('click', function(event) {
+            event.preventDefault();
+            var moreExperts = document.getElementById('more-experts');
+            if (moreExperts.style.display === 'none') {
+                moreExperts.style.display = 'block';
+                this.textContent = 'View Less';
+            } else {
+                moreExperts.style.display = 'none';
+                this.textContent = 'View More';
+            }
+        });
+
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Fetch faculty details based on name from the API
+        async function fetchFacultyDetails(name) {
+            try {
+                const response = await fetch('https://script.googleusercontent.com/macros/echo?user_content_key=DOkGaPX-X8w7sT4zs0C_yUzsArroTIqJTiPKEgzdbaW9a62TOB5RG_Qrg8pEm9O1DOIR0PHuLNSX9hDbc8vDyUacWRdvoDcWm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJWUhViVHqbi-poDOoDUSpzclJ87HiKCHVO5smz01OVNVnJupzCVDeqa-pBoXMylbgN-OVmqH3Jbm8thzlfeyw9HRcPqd4ExMw&lib=M6686HOHn6Hf2MCUXhr8Gtt9bvhwMbWhM');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                const headers = data.content[0];
+                const facultyNameIndex = headers.indexOf("Faculty Name");
+
+                if (facultyNameIndex === -1) {
+                    throw new Error('Column "Faculty Name" not found');
+                }
+
+                // Find the row that matches the faculty name
+                let facultyDetails;
+                for (let i = 1; i < data.content.length; i++) {
+                    if (data.content[i][facultyNameIndex] === name) {
+                        facultyDetails = data.content[i];
+                        break;
+                    }
+                }
+
+                return facultyDetails;
+            } catch (error) {
+                console.error('Error fetching details:', error);
+                throw error;
+            }
+        }
+
+        // Display faculty details on the page
+        async function displayFacultyDetails() {
+            try {
+                const facultyName = getParameterByName('name');
+                if (!facultyName) {
+                    throw new Error('Faculty name parameter not found');
+                }
+
+                const details = await fetchFacultyDetails(facultyName);
+                if (details) {
+                    // Display fetched details on the page
+                    document.getElementById('facultyName').innerHTML = `<h1>${details[1]}</h1>`;
+                    document.getElementById('citations').innerHTML = `<h1>${details[6]}</h1>`;
+                    document.getElementById('hindex').innerHTML = `<h1>${details[7]}</h1>`;
+                    document.getElementById('i10Index').innerHTML = `<h1>${details[8]}</h1>`;
+                    const orcidText = 'Orcid ID';
+                    document.getElementById('orcidLink').innerHTML = `<a href="${details[3]}">  ${orcidText}</a>`;
+            
+            // Scopus ID
+            const scopusText = 'Scopus ID';
+            document.getElementById('scopusLink').innerHTML = `<a href="${details[4]}">${scopusText}</a>`;
+
+            
+            // Web of Science ID
+            const wos = 'WebOfScience ID';
+            document.getElementById('wosLink').innerHTML = `<a href="${details[5]}">${wos}</a>`;
+            
+            // Google Scholar ID
+            const gs = 'GoogleScholar ID';
+            document.getElementById('googleScholarLink').innerHTML = `<a href="${details[2]}">${gs}</a>`;
+            
+                       
+                       
+                    
+                    
+                } else {
+                    document.getElementById('facultyDetails').innerHTML = `<p>Faculty details not found</p>`;
+                }
+            } catch (error) {
+                console.error('Error displaying details:', error);
+                document.getElementById('facultyDetails').innerHTML = `<p>Error displaying details</p>`;
+            }
+        }
+
+        // Call function to display details when the page loads
+        displayFacultyDetails();
+
+ 
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
